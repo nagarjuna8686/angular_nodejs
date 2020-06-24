@@ -1,0 +1,139 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500i&display=swap");
+html {
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.register-employee {
+  margin-top: 25px;
+}
+
+.invalid-feedback {
+  display: block;
+}
+
+.edit-block span {
+  color: blue;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 4px;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.no-data {
+  padding: 25px 0;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  top: 16px !important;
+  bottom: 16px !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-label {
+  top: 1.64375em;
+  margin-top: 0px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.42) !important;
+}
+
+.mat-form-field-infix {
+  padding: .5em 0;
+  border-top: 16px solid transparent;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 13px 0 22px 0;
+}
+
+.mat-form-field-wrapper {
+  padding-bottom: 0px;
+  margin: 0px !important;
+}
+
+  /* for dialog pop-up */
+  .btn-dialog-close{
+    width: 45px;
+    min-width: 0px !important;
+    height: 40px;
+    padding: 0px !important;
+  }
+
+
+ /* mat-confirm-dialog (customised dialog) */
+
+.confirm-dialog-container .mat-dialog-container {
+  border-radius: .25em .25em .4em .4em;
+  padding: 0px;
+}
+.confirm-dialog-container .content-container{
+  margin: 5px 5px 15px 5px;
+  color: #8f9cb5;
+  display: flex;
+}
+.confirm-dialog-container #close-icon{
+  margin-left: auto;
+  order: 2;
+  font-weight: bolder;
+}
+.confirm-dialog-container #close-icon:hover{
+cursor: pointer;
+}
+
+.confirm-dialog-container #no-button{
+height: 50px;
+width: 50%;
+background-color: #fc7169;
+color:white;
+border-radius: 0px;
+}
+
+.confirm-dialog-container #yes-button{
+  height: 50px;
+  width: 50%;
+  background-color: #b6bece;
+  color:white;
+  border-radius: 0px;
+}
+
+.confirm-dialog-container span.content-span{
+  padding:  35px 16px;
+  text-align: center;
+  font-size: 20px;
+}

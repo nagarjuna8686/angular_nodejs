@@ -1,0 +1,21 @@
+
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Employee Details </h5>
+        <p>{{username}}</p>
+        <nav class="my-2 my-md-0 mr-md-3">
+          <a class="btn btn-outline-primary" routerLinkActive="active" 
+          routerLink="/employees-list">View Employees</a>
+          &nbsp;&nbsp;
+          <a class="btn btn-outline-primary" routerLinkActive="active" 
+          routerLink="/add-user">Create User</a>
+          &nbsp;&nbsp;
+          <a class="btn btn-outline-primary" routerLinkActive="active" 
+          routerLink="/users-list">Users</a>
+        </nav>
+        <a class="btn btn-outline-primary" routerLinkActive="active"
+         routerLink="/create-employee">Add Employee</a>
+        <a  class="btn btn-outline-primary ml-2"   (click)="logout()">
+         <h5 class="my-0 mr-md-auto font-weight-normal"   matTooltip="logout"
+           matTooltipClass="example-tooltip-red"><mat-icon>logout</mat-icon></h5></a> 
+      </div>
+    

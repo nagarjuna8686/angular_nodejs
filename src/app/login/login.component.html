@@ -1,0 +1,57 @@
+<div class="row justify-content-center mt-5">
+  <div class="col-md-4 register-employee">
+    <!-- form card register -->
+    <div class="card-body">
+      <h3>Login</h3>
+      <form [formGroup]="Login" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <!-- <label for="inputEmail3">Email</label> -->
+          <mat-form-field class="col-sm-12 mt-0" appearance="outline">
+            <mat-label>Enter your email</mat-label>
+            <input matInput name="email" id="email" autocomplete ="off" formControlName="email" />
+            <mat-error *ngIf="isFieldValid('email')">
+              <span *ngIf="Login.hasError('required', ['email'])"
+                >Cannot be blank.</span
+              >
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group">
+          <!-- <label for="inputVerify3">Password</label> -->
+          <mat-form-field class="col-sm-12" appearance="outline">
+            <mat-label>Enter your Password</mat-label>
+            <input
+              matInput
+              autocomplete ="off"
+              name="password"
+              id="password"
+              formControlName="password"
+              [type]="hide ? 'password' : 'text'"
+            />
+            <mat-icon matSuffix (click)="hide = !hide">{{
+              hide ? "visibility_off" : "visibility"
+            }}</mat-icon>
+            <mat-error *ngIf="isFieldValid('password')">
+              <span *ngIf="Login.hasError('required', ['password'])"
+                >Cannot be blank.</span
+              >
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group m-2">
+          <!-- <button class="btn btn-success btn-lg btn-block" type="submit">Login</button> -->
+          <button
+            mat-raised-button
+            class="col-sm-12 btn btn-success  btn-block"
+          >
+            Login
+          </button>
+          <a routerLink="/register" style="float: right;">Register</a>
+        </div>
+      </form>
+    </div>
+    <!-- form card register -->
+  </div>
+</div>
