@@ -10,9 +10,9 @@ import { User } from '../model/User';
 })
 
 export class ApiService {
-  url:string='http://localhost:4000/api/user';
-  baseUri:string = 'http://localhost:4000/api';
-  baseUrl:string = 'http://localhost:4000/api/userFile';
+  url:string='http://3.12.129.191:4000/api/user';
+  baseUri:string = 'http://3.12.129.191:4000/api';
+  baseUrl:string = 'http://3.12.129.191:4000/api/userFile';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
   constructor(private http: HttpClient,private snackBar:MatSnackBar) { }
